@@ -1,0 +1,30 @@
+<div class="divPageHeader">View Target Company Details :</div>
+    <div style="padding-top: 5px;">
+        <div class="form-horizontal container">       
+            <div class="form-group">
+                <strong>Company Name:</strong> {{company.name}}
+            </div>
+            <div class="form-group">
+                <strong>TurnOver:</strong> {{company.anualTurnOver}}
+            </div>
+            <div class="form-group">
+                <strong>Key Contact:</strong> {{company.keyContacts}}
+            </div>
+            <div class="form-group">
+                <strong>Email:</strong> {{company.mailId}}
+            </div>
+            <div class="form-group">
+                <strong>Decision Status:</strong> {{company.status}}
+            </div>
+            <div class="form-group">
+                <strong>Financial Performance:</strong> {{company.financialPerformance}}
+            </div>
+            <div class="form-group">
+                <strong>Comments:</strong> {{company.remarks}}
+            </div>
+        </div>
+      </div>
+    <div>
+        <button class="btn btn-primary" (click)="GoToList()">Go to List of Target Companies</button>
+    </div>
+    

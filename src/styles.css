@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.SiteHeader{
+    background-image:url(images/bgimage.png);
+    background-repeat:repeat-x;
+    background-position:center;
+    height: 75px;
+}
+.divPageHeader
+{
+    font-size:16px;
+    font-weight:500;
+    font-family:Verdana;
+    color:orange;
+    padding-top: 15px;
+}

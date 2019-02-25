@@ -1,0 +1,51 @@
+<div class="divPageHeader">Create New Company : </div><br />
+    <div class="form-horizontal">       
+        <div class="form-group row">
+            <label for="txtName" class = "control-label col-md-3 text-right"><strong>Company Name:</strong></label>
+            <input id="txtName" [(ngModel)]="newTargetCampany.name" type="text" class = "form-control col-md-4" placeholder="Company Name"/>
+            <span class="text-danger" *ngIf="nameValidation"> Name is Required</span>
+        </div>
+        <div class="form-group row">
+            <label for="txtAnualTurnOver" class = "control-label col-md-3 text-right"><strong>Annual TurnOver:</strong></label>
+            <input id="txtAnualTurnOver" [(ngModel)]="newTargetCampany.anualTurnOver"  placeholder="Annual TurnOver" type="text" class = "form-control col-md-4"/>
+        </div>
+        <div class="form-group row">
+            <label for="txtKeyContacts" class = "control-label col-md-3 text-right"><strong>Key Contact Name:</strong></label>
+            <input id="txtKeyContacts" [(ngModel)]="newTargetCampany.keyContacts"  placeholder="Key Contact Name" type="text" class = "form-control col-md-4"/>
+        </div>
+        <div class="form-group row">
+            <label for="txtMailId" class = "control-label col-md-3 text-right"><strong>Contact Email:</strong></label>
+            <input id="txtMailId" [(ngModel)]="newTargetCampany.mailId"  placeholder="Contact Email" type="text" class = "form-control col-md-4"/>
+        </div>
+        <div class="form-group row">
+            <label for="slectStatus" class = "control-label col-md-3 text-right"><strong>Acquisition Status:</strong></label>
+            <select id="slectStatus" [(ngModel)]="newTargetCampany.status"  class = "form-control col-md-4">
+              <option value="">Select</option>
+              <option value="Researching">Researching</option>
+              <option value="Pending">Pending</option>
+              <option value="Approved">Approved</option>
+              <option value="Declined">Declined</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="slectFinancialPerformance" class = "control-label col-md-3 text-right"><strong>Financial Performance:</strong></label>
+            <select id="slectFinancialPerformance" [(ngModel)]="newTargetCampany.financialPerformance"  class = "form-control col-md-4">
+                <option value="">Select</option>
+              <option value="Poor">Poor</option>
+              <option value="Good">Good</option>
+              <option value="Excellent">Excellent</option>
+            </select>
+        </div>
+        <div class="form-group row">
+            <label for="txtRemarks" class = "control-label col-md-3 text-right"><strong>Comments:</strong></label>
+            <input id="txtRemarks" [(ngModel)]="newTargetCampany.remarks"  placeholder="Remarks" type="text" class = "form-control col-md-4"/>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-3 col-md-4">
+                <input type="button" value="Save" (click)="SaveNewCompany()" class="btn btn-success" />
+                <button (click)="GoToList()" class="btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+  
